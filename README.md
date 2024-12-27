@@ -28,19 +28,20 @@ See the [wiki](https://github.com/thanethomson/statik/wiki) for more details.
 ## Requirements
 In order to install **Statik**, you will need:
 
-* Python 3.6+
-* `pip` or `easy_install`
+* Python 3.6 -> 3.9
+* `pip`
+* or `uv`
 
 ## Installation
 Simply run the following:
 
 ```bash
-> pip install statik
+> pip install https://github.com/blackdaemon/statik.git
 ```
 To upgrade, just run the following:
 
 ```bash
-> pip install --upgrade statik
+> pip install --upgrade https://github.com/blackdaemon/statik.git
 ```
 
 ## Usage
@@ -194,6 +195,21 @@ Then, run **Statik** by passing in `--deploy=netlify`.
 statik --deploy netlify
 ```
 **Statik** will upload the static site that it outputs.
+
+## Building statik
+
+
+To build the `statik` project:
+
+```bash
+> uv sync
+> uv pin 3.9
+> . .venv/bin/activate
+> uv sync
+> uv build
+> statik
+```
+
 
 ## License
 **The MIT License (MIT)**

@@ -1,9 +1,28 @@
 [project]
 name = "statik"
-version = "0.1.0"
 description = "Add your description here"
+authors = [
+  {name = "Thane Thomson", email = "connect@thanethomson.com"},
+]
+maintainers = [
+  {name = "Pavel Vitis", email = "pavelvitis@gmail.com"}
+]
 readme = "README.md"
 requires-python = "~=3.9"
+classifiers=[
+        "Development Status :: 4 - Beta",
+        "Environment :: Console",
+        "Intended Audience :: Developers",
+        "License :: OSI Approved :: MIT License",
+        "Natural Language :: English",
+        "Operating System :: POSIX",
+        "Operating System :: MacOS",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Topic :: Internet :: WWW/HTTP",
+        "Topic :: Utilities",
+    ]
+
 dependencies = [
     "argh>=0.31.3",
     "colorlog>=6.9.0",
@@ -30,6 +49,18 @@ dependencies = [
     "watchdog>=6.0.0",
     "wheel>=0.45.1",
 ]
+dynamic=["version"]
+
+[tool.setuptools.dynamic]
+version = {attr = "statik.__version__"}
+
+[project.license]
+text="MIT"
+
+[project.urls]
+web="https://getstatik.com"
+code="https://github.com/thanethomson/statik"
+fork-python39="https://github.com/blackdaemon/statik"
 
 [tool.uv]
 package = true

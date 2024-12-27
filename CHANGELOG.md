@@ -4,6 +4,11 @@ This is the **Statik** change log as of version `0.6.0`.
 
 ## Release History
 
+### `v0.23.1` - 27 December 2024
+
+* Upgraded build and packaging system to uv (pyproject.toml)
+* Allow Pyton version up to 3.9 (Higher version possible only after resolving problem with `tornado` library not working after 3.9) 
+
 ### `v0.23.0` - 13 October 2019
 
 * Remove support for Python 2 in line with upcoming deprecation in 2020
