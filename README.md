@@ -203,9 +203,6 @@ To build the `statik` project:
 
 ```bash
 > uv sync
-> uv pin 3.9
-> . .venv/bin/activate
-> uv sync
 > uv build
 > statik
 ```
