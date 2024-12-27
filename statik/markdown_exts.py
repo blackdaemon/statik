@@ -7,7 +7,8 @@ import yaml
 from markdown.preprocessors import Preprocessor
 from markdown.extensions import Extension
 from markdown.treeprocessors import Treeprocessor
-from markdown.util import etree
+#from markdown.util import etree
+import xml.etree.ElementTree as etree
 
 from statik.errors import StatikErrorContext
 from statik.utils import strip_el_text
