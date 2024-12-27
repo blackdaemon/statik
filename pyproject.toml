@@ -31,6 +31,8 @@ dependencies = [
     "wheel>=0.45.1",
 ]
 
+[tool.uv]
+package = true
 
 [project.scripts]
 statik='statik.cmdline:main'
